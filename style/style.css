@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +48,11 @@ header nav .menu ul li a {
   padding: 16px 5%;
   line-height: 28px;
   display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  font-weight: 500;
 }
 
 header nav .menu ul li a:hover {
@@ -112,7 +118,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
           transform: rotate(-45deg) translate(1px, 0px);
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 520px) {
   header nav .menu ul {
     position: relative;
     top: 0;
