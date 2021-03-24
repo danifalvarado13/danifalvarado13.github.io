@@ -1,27 +1,41 @@
 
 @media screen and (min-width: 520px){
+    header{
+        height: 80px;
+        img{
+            width: 36px;
+            height: 36px;
+            margin: auto 8%;
+           }
+     
+    }
     header nav .menu ul {
         position: relative;
-        top: 0;
+        top: -15px;
         right: 0;
         overflow: hidden;
         background: unset;
         height: unset;
+        display:flex;
+        align-items: center;
     }
     header nav .menu  ul li {
-        padding: 5px 10px;
-        display: inline-block;
+        padding: 18px 24px;
+        
     } 
     header nav .menu  ul li:hover {
         background: unset;
-        border-bottom: 2px solid black;
+        
     } 
     header nav .menu ul li a {
         padding: unset;
-        line-height: unset;
+        line-height: 28px;
+        color: $menu;
     }
     header nav .menu  ul li a:hover {
-        color: unset;
+        
+        background: unset;
+        color:$blue_hover;
     } 
     header nav .menu input {
         display: none;

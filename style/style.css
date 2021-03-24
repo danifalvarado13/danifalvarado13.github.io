@@ -21,6 +21,12 @@ header {
           justify-content: space-between;
 }
 
+header img {
+  width: 24px;
+  height: 24px;
+  margin: auto 8%;
+}
+
 header nav .menu ul {
   /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
   width: 100%;
@@ -38,33 +44,34 @@ header nav .menu ul li {
 }
 
 header nav .menu ul li:hover {
-  background: #5a5a5a;
+  background: #0000EC;
 }
 
 header nav .menu ul li a {
   position: relative;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   padding: 16px 5%;
   line-height: 28px;
   display: block;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
-  color: #060A24;
   letter-spacing: 0;
   font-weight: 500;
 }
 
 header nav .menu ul li a:hover {
-  color: #fff;
+  color: #060A24;
+  background: #00F0B8;
 }
 
 header nav .menu input[type="checkbox"]:checked ~ ul {
   height: 240px;
+  background: #0000EC 100%;
 }
 
 header nav .menu {
-  padding-top: 3px;
+  padding-top: 7px;
 }
 
 /*checkbox transparente y en primer plano*/
@@ -80,14 +87,14 @@ header nav .menu input {
 /*span -lineas del menu hamburguesa-*/
 header nav .menu span {
   display: block;
-  width: 25px;
-  height: 2.5px;
-  margin-bottom: 6.5px;
+  width: 18px;
+  height: 2px;
+  margin-bottom: 3px;
   position: relative;
   background: #000;
   z-index: 1;
-  -webkit-transform-origin: 3px 0px;
-          transform-origin: 3px 0px;
+  -webkit-transform-origin: 5px 0px;
+          transform-origin: 5px 0px;
 }
 
 header nav .menu span:first-child {
@@ -103,8 +110,8 @@ header nav .menu span:nth-last-child(2) {
 /*movimiento a cruz*/
 header nav .menu input:checked ~ span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(2px, 1px);
-          transform: rotate(45deg) translate(2px, 1px);
+  -webkit-transform: rotate(45deg) translate(1px, 1px);
+          transform: rotate(45deg) translate(1px, 1px);
 }
 
 header nav .menu input:checked ~ span:nth-last-child(3) {
@@ -119,28 +126,42 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 @media screen and (min-width: 520px) {
+  header {
+    height: 80px;
+  }
+  header img {
+    width: 36px;
+    height: 36px;
+    margin: auto 8%;
+  }
   header nav .menu ul {
     position: relative;
-    top: 0;
+    top: -15px;
     right: 0;
     overflow: hidden;
     background: unset;
     height: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header nav .menu ul li {
-    padding: 5px 10px;
-    display: inline-block;
+    padding: 18px 24px;
   }
   header nav .menu ul li:hover {
     background: unset;
-    border-bottom: 2px solid black;
   }
   header nav .menu ul li a {
     padding: unset;
-    line-height: unset;
+    line-height: 28px;
+    color: #060A24;
   }
   header nav .menu ul li a:hover {
-    color: unset;
+    background: unset;
+    color: #00F0B8;
   }
   header nav .menu input {
     display: none;
