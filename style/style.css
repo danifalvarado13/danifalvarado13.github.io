@@ -12,6 +12,7 @@ header {
   position: fixed;
   height: 44px;
   top: 0;
+  z-index: 10;
   padding: 10px 5%;
   background-color: white;
   display: -webkit-box;
@@ -180,28 +181,38 @@ main section .btn:hover {
 }
 
 main .episodios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  margin: unset;
+  position: absolute;
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  margin: 20px 0;
+  z-index: 2;
   width: 100%;
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 }
 
-main .episodios h1 {
-  margin: 0 5%;
+main .episodios .txt {
+  -webkit-transform: skewY(6deg);
+          transform: skewY(6deg);
+  position: relative;
+  z-index: 3;
+}
+
+main .episodios .txt h1 {
+  margin: 10% 5%;
   color: #fff;
 }
 
-main .episodios div img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 80%;
+main .episodios .txt .podcast {
+  margin: 4%;
+  max-width: 90%;
+}
+
+main .episodios .txt .podcast:last-of-type {
+  margin-bottom: 20px;
+}
+
+main .episodios .txt .space {
+  height: 120px;
 }
 
 @media screen and (min-width: 520px) {
