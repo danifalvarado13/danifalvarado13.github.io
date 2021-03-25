@@ -1,0 +1,23 @@
+main{
+    margin: 73px 5%;
+    section{
+        h1{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 36px;
+            color:$menu;
+            letter-spacing: 0;
+            line-height: 42px;
+            font-weight: 350;
+        }
+        p{
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 200;
+            margin-top: 5%;
+            text-align: justify;
+            font-size: 14px;
+            color:$menu;
+            letter-spacing: 0;
+            line-height: 22px;
+        }
+    }
+}

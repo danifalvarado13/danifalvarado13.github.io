@@ -33,7 +33,7 @@
         color: $menu;
     }
     header nav .menu  ul li a:hover {
-        
+        text-decoration: line-through;
         background: unset;
         color:$blue_hover;
     } 

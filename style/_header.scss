@@ -10,7 +10,7 @@ header {
     img{
         width: 24px;
         height: 24px;
-        margin: auto 8%;
+        margin: auto 5%;
        }  
 }
 
@@ -42,7 +42,12 @@ header nav .menu ul li a {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
     letter-spacing: 0;
-    font-weight: 500;
+    font-weight: 450;
+    
+    &:active{
+        color: $txt_active;
+        text-decoration: line-through;
+    }
 }
 header nav .menu  ul li a:hover {
     color:$menu;
