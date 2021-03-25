@@ -172,6 +172,11 @@ main section .btn {
   margin: 5% 0;
 }
 
+main section .btn:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
+}
+
 @media screen and (min-width: 520px) {
   header {
     height: 80px;
