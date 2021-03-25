@@ -132,10 +132,11 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 }
 
 main {
-  margin: 73px 5%;
+  margin-top: 73px;
 }
 
 main section h1 {
+  margin: 0 5%;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 36px;
   color: #060A24;
@@ -149,9 +150,9 @@ main section h1 span {
 }
 
 main section p {
+  margin: 5%;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 200;
-  margin: 5% 0;
   text-align: justify;
   font-size: 14px;
   color: #060A24;
@@ -160,22 +161,47 @@ main section p {
 }
 
 main section .btn {
+  margin: 5%;
   font-family: 'IBM Plex Mono', monospace;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  width: 100%;
+  width: 90%;
   height: 48px;
   background: #00F0B8;
   color: #060A24;
   border: none;
-  margin: 5% 0;
 }
 
 main section .btn:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #fff;
   border: none;
+}
+
+main .episodios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: unset;
+  width: 100%;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+main .episodios h1 {
+  margin: 0 5%;
+  color: #fff;
+}
+
+main .episodios div img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
 }
 
 @media screen and (min-width: 520px) {
