@@ -175,6 +175,7 @@ main section .btn {
 main section .btn:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #fff;
+  border: none;
 }
 
 @media screen and (min-width: 520px) {
