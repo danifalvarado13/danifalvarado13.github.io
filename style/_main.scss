@@ -46,7 +46,7 @@ main{
         }
     }
     .episodios{
-        position:absolute;
+        
         transform: skewY(-6deg);
         margin: 20px 0;
         z-index: 2;
@@ -56,21 +56,30 @@ main{
             transform: skewY(6deg);
             position: relative;
             z-index: 3;
+            padding-top: 10px;
             h1{
-                margin:10% 5%;
+                margin:5%;
                 color: #fff;
             }
             .podcast{
                 margin:4%;
-                max-width: 90%;
-                &:last-of-type{
-                    margin-bottom: 20px;
-                
-                }
+                max-width: 90%;               
             }
             .space{
                 height: 120px;
             }
+        }
+    }
+    .nosotros{
+        margin-top: -110px;        
+        img{
+            position: relative;
+            width: 100%;
+            z-index: 4;
+            padding: 0 auto;
+        }
+        p{
+            text-align: left;
         }
     }
 }

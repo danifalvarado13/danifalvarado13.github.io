@@ -181,7 +181,6 @@ main section .btn:hover {
 }
 
 main .episodios {
-  position: absolute;
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
   margin: 20px 0;
@@ -195,10 +194,11 @@ main .episodios .txt {
           transform: skewY(6deg);
   position: relative;
   z-index: 3;
+  padding-top: 10px;
 }
 
 main .episodios .txt h1 {
-  margin: 10% 5%;
+  margin: 5%;
   color: #fff;
 }
 
@@ -207,12 +207,23 @@ main .episodios .txt .podcast {
   max-width: 90%;
 }
 
-main .episodios .txt .podcast:last-of-type {
-  margin-bottom: 20px;
-}
-
 main .episodios .txt .space {
   height: 120px;
+}
+
+main .nosotros {
+  margin-top: -110px;
+}
+
+main .nosotros img {
+  position: relative;
+  width: 100%;
+  z-index: 4;
+  padding: 0 auto;
+}
+
+main .nosotros p {
+  text-align: left;
 }
 
 @media screen and (min-width: 520px) {
