@@ -102,3 +102,53 @@ header nav .menu input:checked ~ span:nth-last-child(3) {
 header nav .menu input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(1px, 0px);
 }
+
+
+
+@media screen and (min-width: 750px) {
+    header{
+        height: 80px;
+        img{
+            width: 36px;
+            height: 36px;
+            margin: auto 8%;
+           }
+     
+    }
+    header nav .menu ul {
+        position: relative;
+        top: -15px;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset;
+        display:flex;
+        align-items: center;
+    }
+    header nav .menu  ul li {
+        padding: 18px 24px;
+        
+    } 
+    header nav .menu  ul li:hover {
+        background: unset;
+        
+    } 
+    header nav .menu ul li a {
+        padding: unset;
+        line-height: 28px;
+        color: $menu;
+    }
+    header nav .menu  ul li a:hover {
+        text-decoration: line-through;
+        background: unset;
+        color:$blue_hover;
+    } 
+    header nav .menu input {
+        display: none;
+    }
+    header nav .menu span {
+        display: none;
+    }
+}
+
+

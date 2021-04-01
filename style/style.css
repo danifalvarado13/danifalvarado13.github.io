@@ -138,6 +138,53 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
           transform: rotate(-45deg) translate(1px, 0px);
 }
 
+@media screen and (min-width: 750px) {
+  header {
+    height: 80px;
+  }
+  header img {
+    width: 36px;
+    height: 36px;
+    margin: auto 8%;
+  }
+  header nav .menu ul {
+    position: relative;
+    top: -15px;
+    right: 0;
+    overflow: hidden;
+    background: unset;
+    height: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .menu ul li {
+    padding: 18px 24px;
+  }
+  header nav .menu ul li:hover {
+    background: unset;
+  }
+  header nav .menu ul li a {
+    padding: unset;
+    line-height: 28px;
+    color: #060A24;
+  }
+  header nav .menu ul li a:hover {
+    text-decoration: line-through;
+    background: unset;
+    color: #00F0B8;
+  }
+  header nav .menu input {
+    display: none;
+  }
+  header nav .menu span {
+    display: none;
+  }
+}
+
 main {
   margin-top: 73px;
 }
@@ -186,6 +233,47 @@ main section .btn:hover {
   border: none;
 }
 
+@media screen and (min-width: 450px) {
+  main {
+    margin-top: 85px;
+  }
+  main section h1 {
+    margin: 0 14%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 64px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 84px;
+    font-weight: 400;
+  }
+  main section h1 span {
+    text-decoration: line-through;
+  }
+  main section p {
+    margin: 2% 14%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 250;
+    text-align: left;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+    width: 44%;
+  }
+  main section .btn {
+    margin: 2% 14%;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    width: 16%;
+    height: 48px;
+    background: #00F0B8;
+    color: #060A24;
+    border: none;
+  }
+}
+
 .episodios {
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
@@ -209,12 +297,33 @@ main section .btn:hover {
 }
 
 .episodios .txt .podcast {
-  margin: 4%;
+  margin: 5%;
   max-width: 90%;
+  display: -ms-grid;
+  display: grid;
 }
 
 .episodios .txt .space {
   height: 120px;
+}
+
+@media screen and (min-width: 450px) {
+  .episodios .txt h1 {
+    margin: 4% 14%;
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .episodios .txt .podcast {
+    max-width: unset;
+    margin: unset;
+    margin-left: 7%;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    gap: 15% 5%;
+  }
+  .episodios .txt .space {
+    height: 250px;
+  }
 }
 
 main .nosotros {
@@ -240,13 +349,10 @@ main .entrevistas .galeria {
   display: -ms-grid;
   display: grid;
   margin-top: 20px;
-}
-
-main .entrevistas .galeria div {
   gap: 0;
 }
 
-main .entrevistas .galeria div img {
+main .entrevistas .galeria img {
   width: 100%;
 }
 
@@ -269,7 +375,7 @@ main .topicos .temas .img_center img {
 
 main .topicos .temas div {
   width: 100%;
-  margin: 15px 0;
+  margin: 25px 0;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -311,53 +417,10 @@ footer .foot {
 }
 
 footer .iconos {
-  justify-items: center;
-}
-
-@media screen and (min-width: 520px) {
-  header {
-    height: 80px;
-  }
-  header img {
-    width: 36px;
-    height: 36px;
-    margin: auto 8%;
-  }
-  header nav .menu ul {
-    position: relative;
-    top: -15px;
-    right: 0;
-    overflow: hidden;
-    background: unset;
-    height: unset;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header nav .menu ul li {
-    padding: 18px 24px;
-  }
-  header nav .menu ul li:hover {
-    background: unset;
-  }
-  header nav .menu ul li a {
-    padding: unset;
-    line-height: 28px;
-    color: #060A24;
-  }
-  header nav .menu ul li a:hover {
-    text-decoration: line-through;
-    background: unset;
-    color: #00F0B8;
-  }
-  header nav .menu input {
-    display: none;
-  }
-  header nav .menu span {
-    display: none;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

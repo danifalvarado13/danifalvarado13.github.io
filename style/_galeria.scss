@@ -2,12 +2,11 @@ main .entrevistas{
     margin: 40px 0;
     .galeria{
         display: grid;
-        margin-top: 20px;
-        div {
-            gap: 0;
-            img{
-                width: 100%;
-            }
+        margin-top: 20px;        
+        gap: 0;
+        img{
+            width: 100%;
         }
+        
     }
 }

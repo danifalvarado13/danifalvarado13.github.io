@@ -48,3 +48,50 @@ main{
         }
     }
 }
+
+@media screen and (min-width:450px) {
+    main{
+        margin-top: 85px;
+        section{
+            h1{
+                margin: 0 14%;
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-size: 64px;
+                color:$menu;
+                letter-spacing: 0;
+                line-height: 84px;
+                font-weight: 400;
+    
+                span{
+                    text-decoration: line-through;
+                }
+                
+    
+            }
+            p{
+                margin:2% 14%;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight: 250;
+                text-align: left;
+                font-size: 16px;
+                color:$menu;
+                letter-spacing: 0;
+                line-height: 24px;
+                width: 44%;
+            }
+    
+            .btn{
+                margin: 2% 14%;
+                font-family: 'IBM Plex Mono', monospace;
+                text-align: center;
+                font-weight: 500;
+                font-size: 16px;
+                width: 16%;
+                height: 48px;
+                background: $blue_hover;
+                color: $menu;
+                border: none;
+            }
+        }
+    }
+}

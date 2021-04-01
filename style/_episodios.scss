@@ -15,11 +15,34 @@
             color: #fff;
         }
         .podcast{
-            margin:4%;
-            max-width: 90%;               
+            margin:5%;
+            max-width: 90%; 
+            display: grid;              
         }
         .space{
             height: 120px;
         }
     }
+}
+
+@media screen and (min-width:450px){
+.episodios .txt{
+    h1{
+        margin: 4% 14%;
+        font-size: 48px;
+        line-height: 62px;
+    }
+    .podcast{
+        max-width: unset;
+        margin: unset;
+        margin-left: 7%;
+        grid-template-columns: 40% 40%;
+        gap:15% 5%;
+        
+    }
+    .space{
+        height:250px;
+    }
+
+}
 }
