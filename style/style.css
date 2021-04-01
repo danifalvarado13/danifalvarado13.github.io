@@ -356,9 +356,11 @@ main .nosotros p {
   }
   main .nosotros div img {
     position: relative;
-    width: 90%;
+    width: 70%;
     z-index: 4;
     padding: 0 auto;
+    -ms-grid-column-align: self-end;
+        justify-self: self-end;
   }
   main .nosotros .texto h1 {
     margin-left: 0;
@@ -428,7 +430,7 @@ main .topicos .temas .img_center img {
 
 main .topicos .temas div {
   width: 100%;
-  margin: 25px 0;
+  margin: 6% 1%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -442,11 +444,47 @@ main .topicos .temas div h2 {
   text-align: center;
 }
 
-.final {
+@media screen and (min-width: 450px) {
+  main .topicos h1 {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  main .topicos .temas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .topicos .temas .box {
+    width: 25%;
+  }
+}
+
+main .final {
   text-align: center;
   padding-bottom: 31px;
   overflow: hidden;
   height: 300px;
+}
+
+@media screen and (min-width: 450px) {
+  main .final {
+    text-align: center;
+    padding-bottom: 31px;
+    overflow: hidden;
+    height: 450px;
+  }
+  main .final .txt h1 {
+    margin-top: 5%;
+  }
+  main .final .txt .btn {
+    width: 28%;
+  }
 }
 
 footer {
@@ -475,5 +513,31 @@ footer .iconos {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (min-width: 450px) {
+  footer {
+    margin-top: -90px;
+    height: 150px;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    place-content: center;
+  }
+  footer .foot {
+    padding-left: 14%;
+    font-size: 16px;
+    line-height: 28px;
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: unset;
+  }
+  footer .iconos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

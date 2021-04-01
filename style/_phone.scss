@@ -19,11 +19,15 @@ main .nosotros{
         grid-template-columns: 50% 50%;
         align-content: center; 
         justify-content: center;      
-        div img{
-            position: relative;
-            width: 90%;
-            z-index: 4;
-            padding: 0 auto;
+        div {
+            
+            img{
+                position: relative;
+                width: 70%;
+                z-index: 4;
+                padding: 0 auto;
+                justify-self:self-end;
+            }
         }
         .texto {
             h1{
