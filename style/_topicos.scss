@@ -1,0 +1,27 @@
+main .topicos .temas{
+        
+    .img_center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 104px;
+            height: 104px;
+        }
+    }
+    div{
+        width: 100%;
+        margin: 15px 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+        h2{
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: $menu;
+            font-size: 24px;
+            letter-spacing: 0;
+            text-align: center;
+        }
+    }
+}
