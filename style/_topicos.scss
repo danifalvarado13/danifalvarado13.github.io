@@ -1,27 +1,32 @@
-main .topicos .temas{
-        
-    .img_center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-            width: 104px;
-            height: 104px;
-        }
+main .topicos {
+    h1{
+        margin-bottom: 9%;
     }
-    div{
-        width: 100%;
-        margin: 6% 1%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    .temas{
         
-        h2{
-            font-family: 'IBM Plex Sans', sans-serif;
-            color: $menu;
-            font-size: 24px;
-            letter-spacing: 0;
-            text-align: center;
+        .img_center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 104px;
+                height: 104px;
+            }
+        }
+        .box{
+            width: 100%;
+            margin: 13% 1%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            
+            h2{
+                font-family: 'IBM Plex Sans', sans-serif;
+                color: $menu;
+                font-size: 24px;
+                letter-spacing: 0;
+                text-align: center;
+            }
         }
     }
 }
@@ -31,7 +36,7 @@ main .topicos .temas{
         h1{
             font-size: 48px;
             line-height: 62px;
-        
+            
         }
         .temas{
             display: flex;

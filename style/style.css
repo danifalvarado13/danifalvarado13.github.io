@@ -308,6 +308,10 @@ main section .btn:hover {
   display: grid;
 }
 
+.episodios .txt .podcast iframe {
+  margin: 3% 0;
+}
+
 .episodios .txt .space {
   height: 120px;
 }
@@ -325,6 +329,9 @@ main section .btn:hover {
         grid-template-columns: 40% 40%;
     gap: 15% 5%;
     place-content: center;
+  }
+  .episodios .txt .podcast iframe {
+    margin: unset;
   }
   .episodios .txt .space {
     height: 250px;
@@ -344,6 +351,7 @@ main .nosotros img {
 
 main .nosotros p {
   text-align: left;
+  width: 85%;
 }
 
 @media screen and (min-width: 800px) {
@@ -421,6 +429,10 @@ main .entrevistas .galeria img {
   }
 }
 
+main .topicos h1 {
+  margin-bottom: 9%;
+}
+
 main .topicos .temas .img_center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,15 +450,15 @@ main .topicos .temas .img_center img {
   height: 104px;
 }
 
-main .topicos .temas div {
+main .topicos .temas .box {
   width: 100%;
-  margin: 6% 1%;
+  margin: 13% 1%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-main .topicos .temas div h2 {
+main .topicos .temas .box h2 {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #060A24;
   font-size: 24px;
