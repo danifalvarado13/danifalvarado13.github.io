@@ -33,17 +33,20 @@ main .topicos {
 
 @media screen and (min-width:800px){
     main .topicos{
+        
         h1{
             font-size: 48px;
             line-height: 62px;
-            
+            margin-bottom: 2%;
         }
         .temas{
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
+            margin-bottom: 80px;
             .box{
-                width: 25%;
+                width: 20%;
+                margin: 5% 1%;
             }
         }
     }

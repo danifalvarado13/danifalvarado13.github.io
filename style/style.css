@@ -470,6 +470,7 @@ main .topicos .temas .box h2 {
   main .topicos h1 {
     font-size: 48px;
     line-height: 62px;
+    margin-bottom: 2%;
   }
   main .topicos .temas {
     display: -webkit-box;
@@ -481,9 +482,11 @@ main .topicos .temas .box h2 {
             flex-flow: row wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-bottom: 80px;
   }
   main .topicos .temas .box {
-    width: 25%;
+    width: 20%;
+    margin: 5% 1%;
   }
 }
 
