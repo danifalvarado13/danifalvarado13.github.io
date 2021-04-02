@@ -12,8 +12,12 @@ main{
 
             span{
                 text-decoration: line-through;
+             
             }
-            
+            .dot{
+                text-decoration: unset;
+                color: $bg_blue;
+            }
 
         }
         p{
@@ -49,9 +53,9 @@ main{
     }
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:800px) {
     main{
-        margin-top: 85px;
+        margin-top: 200px;
         section{
             h1{
                 margin: 0 14%;
@@ -65,14 +69,13 @@ main{
                 span{
                     text-decoration: line-through;
                 }
-                
     
             }
             p{
                 margin:2% 14%;
                 font-family: 'IBM Plex Mono', monospace;
                 font-weight: 250;
-                text-align: left;
+                text-align:justify;
                 font-size: 16px;
                 color:$menu;
                 letter-spacing: 0;

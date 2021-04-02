@@ -12,34 +12,34 @@ main .nosotros{
     }
 }
 
-@media screen and (min-width:450px){
+@media screen and (min-width:800px){
     main .nosotros{
         margin-top: -110px; 
         display: grid;
         grid-template-columns: 50% 50%;
         align-content: center; 
         justify-content: center;      
-        div {
-            
+        .phone {
+            display: flex;
+            place-items: end;
+            padding-left: 30%;
             img{
-                position: relative;
-                width: 70%;
-                z-index: 4;
-                padding: 0 auto;
+                width: 80%;
+                height: 100%;
                 justify-self:self-end;
             }
         }
         .texto {
             h1{
-                margin-left: 0;
+                margin-left: 2%;
                 font-size: 48px;
                 line-height: 62px;
-                margin-top: 100px;
+                margin-top: 170px;
             }
             p{
             text-align: left;
             margin: 2%;
-            width: 90%;
+            width: 60%;
             }
         }
     }
