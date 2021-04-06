@@ -309,11 +309,11 @@ main section .btn:hover {
 }
 
 .episodios .txt .podcast iframe {
+  margin: 3% 0;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   border: 0;
   background-color: transparent;
-  overflow: hidden;
 }
 
 .episodios .txt .space {
@@ -329,14 +329,15 @@ main section .btn:hover {
   .episodios .txt .podcast {
     max-width: unset;
     margin: unset;
+    margin-top: 5%;
     -ms-grid-columns: 40% 40%;
         grid-template-columns: 40% 40%;
     gap: 15% 5%;
     place-content: center;
+    overflow: hidden;
   }
   .episodios .txt .podcast iframe {
     margin: unset;
-    margin-top: 2%;
   }
   .episodios .txt .space {
     height: 250px;
