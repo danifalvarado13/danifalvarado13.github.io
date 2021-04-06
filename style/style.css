@@ -65,11 +65,11 @@ header nav .menu ul li a {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   letter-spacing: 0;
-  font-weight: 450;
+  font-weight: 500;
 }
 
 header nav .menu ul li a:active {
-  color: #060A24 56%;
+  color: #a7a8ac;
   text-decoration: line-through;
 }
 
@@ -196,7 +196,7 @@ main section h1 {
   color: #060A24;
   letter-spacing: 0;
   line-height: 42px;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 main section h1 span {
@@ -257,7 +257,7 @@ main section .btn:hover {
   main section p {
     margin: 2% 14%;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 250;
+    font-weight: 300;
     text-align: justify;
     font-size: 16px;
     color: #060A24;
@@ -352,7 +352,7 @@ main .nosotros img {
   position: relative;
   width: 100%;
   z-index: 4;
-  padding: 0 auto;
+  margin: 0 auto;
 }
 
 main .nosotros p {
